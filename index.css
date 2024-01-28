@@ -1,0 +1,200 @@
+body {
+    background-image: url('white-modern-geometrical-wallpaper-with-hexagons.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    color: black;
+    padding: 100px 0;
+    position: absolute;
+    right: 350px;
+
+}
+nav {
+    position: fixed;
+    width: 100%;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.box{
+    text-decoration: none;
+    color: black;
+    background: transparent;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black;
+    margin: 0 10px;
+}
+.box:hover{
+    border: 0;
+    box-shadow: 0 0 8px black, 0 0 15px blue, 0 0 20px black;
+}
+.container {
+    text-align: left;
+    padding-left: 1150px;
+    padding-top: 200px;
+}
+
+.slide {
+    text-align: left;
+    padding-right: 150px;
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    animation: slideAnimation 0.5s ease-in-out forwards 0.1s, borderAnimation 1s ease-in-out forwards 0.3s; /* Voeg beide animaties toe met vertragingen */
+}
+
+p.hidden-text {
+    opacity: 0; /* Verberg de tekst door de opeenvolgende animatie */
+    position: absolute; /* Stel de positie in op absoluut om te kunnen schuiven */
+    right: 150px; /* Beginpositie aan de rechterkant van het element */
+    top: 0;
+    animation: slideAnimation 2s ease-in-out forwards 0.5s; /* Voeg twee animaties toe met vertragingen */
+}
+h1 {
+    opacity:0;
+    transform-origin: center;
+    animation: rotateAnimation 2s ease-in-out forwards 1.5s, fadeInAnimation 1s ease-in-out forwards 1.5s;
+}
+.header-right{
+    font-size: 20px;
+    border: 2px solid blue;
+    padding: 20px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: 40px;
+    margin-top: 180px;
+}
+
+#ik{
+    width: 180px;
+    margin-right: auto;
+    margin-left: 90px;
+    margin-top: -660px;
+    margin-bottom: 360px;
+}
+.logo img{
+    width: 50px;
+}
+#html{
+    width: 100px;
+    position: absolute;
+    bottom: 90px;
+    left: 240px;
+}
+#css{
+    width: 100px;
+    position: absolute;
+    bottom: 90px;
+    left: 460px;
+}
+#python{
+    width: 100px;
+    position: absolute;
+    bottom: 290px;
+    left: 780px;
+}
+#tkinter{
+    width: 140px;
+    position: absolute;
+    bottom: 610px;
+    left: 770px;
+}
+#github{
+    width: 150px;
+    position: absolute;
+    bottom: 270px;
+    left: 570px;
+}
+#javascript{
+    width: 140px;
+    position: absolute;
+    bottom: 100px;
+    left: 650px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    text-align: right;
+}
+.gmail, .github, .cv {
+    display: inline-block;
+    margin-right: 150px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: black;
+}
+.cv{
+    margin-right: 70px;
+}
+.gmail {
+    margin-right: 70px;
+}
+.github{
+    margin-right: 70px;
+}
+.github a, .gmail a, .cv a {
+    text-decoration: none; 
+    color: black; 
+    transition: all 0.3s ease-in-out; 
+}
+
+.github a:hover, .gmail a:hover, .cv a:hover {
+    color: rgb(102, 81, 219);
+}
+.github::after, .gmail::after, .cv::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px; /* Pas dit aan om de hoogte van de lijn onder de links aan te passen */
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid black; /* Voeg hier de gewenste lijnkleur en -stijl toe */
+}
+@keyframes slideAnimation {
+    0% {
+        opacity: 0;
+        top: 0;
+    }
+    100% {
+        opacity: 1;
+        top: 350px; /* Schuif naar beneden door een positieve waarde toe te passen */
+    }
+}
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }}
+.studie-richting{
+    font-size: 20px;
+    padding: 20px;
+    width: 40%;
+    margin: 0 20px 20px auto;
+}
+.studies{
+    font-size: 20px;
+    padding: 20px;
+    width: 20%;
+    margin: -840px 0 0 100px;
+}
+.typed-text{
+    background: rgb(110, 110, 184);
+    border-bottom: 4px solid black;
+}
